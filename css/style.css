@@ -1,0 +1,229 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*end of css reset*/
+
+body {
+	min-width: 348px;
+}
+
+.list-header{
+	margin-top: 1em;
+}
+
+.heading1 {
+	padding-top: 18px !important; 
+}
+
+ul {
+	background-color: #fff;
+	position: relative;
+	top: 15px;
+}
+
+/*Рышення з виділенням для css3*/
+li::selection, label::selection {
+	background:rgba(0,0,0,0.01);
+}
+
+.ui-controlgroup-controls {
+	min-width: 100%;
+	position: relative;
+}
+
+.form-wraper{
+	min-width: 320px;
+	position: relative;
+	top: 10px;
+	margin: 0 20px;
+}
+	input.add-item{
+		width: 110px;
+		float: right !important;
+		top: -44.375px;
+		z-index: 1;
+		text-decoration: line-through;
+	}
+
+	input.type-field{
+		box-sizing: border-box;
+		min-width: 200px;
+		width: 100%;
+		text-align: left;
+		text-decoration: line-through;
+	}
+
+	input[type="checkbox"] {
+		position: absolute;
+		top: 10px;
+		left: 27px;
+		width: 20px;
+		height: 20px;
+	}
+
+	label.task {
+		padding: 10px 0 0 85px;
+		width: 80%;
+		height: 20px;
+		font-size: 24px;	
+	}
+	label.done {
+		text-decoration: line-through;
+	}
+
+	#controlgroup-mini{
+		position: absolute;
+
+		top: 40px;
+		right: 00px;
+
+	}
+
+	#insertLabelEditInput {
+		z-index: 999;
+		position: absolute;
+		top: -7px;
+		left: 0;
+		font-size: 24px;
+		padding: 7px 0 5px 85px;
+		width: 100%;
+		margin-top: 7px;
+		outline: none;
+		border: none;
+		background-color: rgba(255, 255, 255, 0.75);
+}
+
+	.disabled {
+		cursor: not-allowed;
+		color: #555 !important;
+	}
+
+	.clear-all {
+		position: static;
+	}
+
+
+a.destroy {
+	position: absolute;
+	right: 27px;
+	top: 6px;
+	display: none;
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	background: url(destroy1.png) 0 0;
+}
+
+#todo-container li {
+	margin: -1px;
+	padding: 2px 0 2px 0;
+	position: relative;
+	/* font-size: 16px; */
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	list-style: none;
+}
+
+li:hover label.task, li:hover{
+	background-color: #cccccc;
+}
+
+#todo-container li:hover .destroy {
+	display: block;
+}
+
+a:hover {
+	background-position: 0 -33px;
+};
