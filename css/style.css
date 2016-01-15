@@ -113,7 +113,7 @@ ul {
 	top: 15px;
 }
 
-/*Рышення з виділенням для css3*/
+/*Рішення з виділенням для css3*/
 li::selection, label::selection {
 	background:rgba(0,0,0,0.01);
 }
