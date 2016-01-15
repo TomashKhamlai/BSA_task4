@@ -132,9 +132,11 @@ li::selection, label::selection {
 	input.add-item{
 		width: 110px;
 		float: right !important;
-		top: -44.375px;
+		top: -46px;
 		z-index: 1;
 		text-decoration: line-through;
+		border-top-right-radius: .5em;
+		border-bottom-right-radius: .5em;
 	}
 
 	input.type-field{
@@ -165,7 +167,6 @@ li::selection, label::selection {
 
 	#controlgroup-mini{
 		position: absolute;
-
 		top: 40px;
 		right: 00px;
 
